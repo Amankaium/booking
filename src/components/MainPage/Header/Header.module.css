@@ -1,0 +1,40 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainLogo {
+    width: 150px;
+}
+
+.mainNav {
+    display: flex;
+    gap: 50px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.mainRent {
+    border: 1px solid white;
+    border-radius: 5px;
+    border-color: white;
+    padding: 5px 15px;
+    margin-top: -6px;
+}
+
+.dropdown > ul {
+    list-style-type: none;
+}
+/* 
+.dropdown {
+    display: none;
+}
+
+.mainEntry:hover .dropdown {
+    display: block;
+    position: absolute;
+} */

@@ -1,0 +1,22 @@
+.search {
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px 0;
+    background-color: rgb(235, 235, 248, 0.3);
+    width: 700px;
+    margin: 0 auto;
+}
+
+input{
+    margin-top: 20px;
+    border: 1px solid lightgrey;
+    padding: 7px;
+}
+
+button {
+    padding: 7px 30px;
+}
+
+.caption {
+    font-size: larger;
+}
