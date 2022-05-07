@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import s from './Header.module.css';
+import Logo from "../../../assets/images/logo.png";
+import Dropdown from '../Dropdown/Dropdown';
 
 
 const Header = () => {
+
     return (
-        <div className={s.main}>
+        <nav className={s.main}>
             <NavLink className={s.link} to='/main'>
-                <img className={s.mainLogo} src="./../../../assets/images/logo_file_06.jpg" alt="logo" />
+                <img className={s.mainLogo} src={ Logo } alt="logo" />
             </NavLink>
             <div className={s.mainNav}>
                 <NavLink className={s.link} to='/rent'>
@@ -17,16 +20,10 @@ const Header = () => {
                     <div className={s.mainCabinet}>Личный кабинет</div>
                 </NavLink>
                 <NavLink className={s.link} to='/login'>
-                    <div className={s.mainEntry}>Вход</div>
-                    <div className={s.dropdown}>
-                        <ul>
-                            <li><NavLink className={s.link} to='/register'>Регистрация</NavLink></li>
-                            <li><NavLink className={s.link} to='/entry'>Вход</NavLink></li>
-                        </ul>
-                    </div>
+                    <Dropdown />
                 </NavLink>                             
             </div>            
-        </div>
+        </nav>
     )
 }
 

@@ -1,0 +1,17 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropdownBtn {
+    padding-bottom: 10px;
+}
+
+.dropdown .dropdownContent {
+    position: absolute;
+    top: 110%;
+    right: 100%;
+}
+
+.dropdown .dropdownContent .dropdownItem {
+    padding: 5px;
+}
