@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import s from './Header.module.css';
-import Logo from "../../../assets/images/logo.png";
-import Dropdown from '../Dropdown/Dropdown';
+import Logo from "../../../assets/icons/logo.svg";
+import Dropdown from '../Header/Dropdown/Dropdown';
 
 
 const Header = () => {

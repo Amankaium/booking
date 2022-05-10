@@ -6,10 +6,20 @@
 
 
 .mainPage {
-    background-image: url("./../../assets/images/KGmain.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-family: Roboto, sans-serif;
+    color: #000000;
+    margin: 0 140px 52px;
+    padding: 40px;
+}
+
+.header {
     max-width: 100%;
-    padding: 70px 100px 160px;
-    color: white;
+    height: 80px;
+    background-color: #fff;
+}
+
+.search {
+    background-image: url("./../../assets/images/bg.png");
+    height: 570px;
+    padding-top: 370px;
 }
