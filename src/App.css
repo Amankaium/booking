@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.primary-btn {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 24px;
+  color: white;
+  background: #58A4B0;
+  border: none;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+.primary-btn:hover {
+  background: #4e96a1;
+}
+
+.primary-btn:active {
+  font-size: 15px;
+  background: #458993;
+}
