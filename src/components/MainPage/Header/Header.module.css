@@ -1,14 +1,21 @@
-.main {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+    padding: 0 12%;
 }
 
-.mainLogo {
+.headerLogo {
     width: 150px;
 }
 
-.mainNav {
+.headerNav {
     display: flex;
     gap: 50px;
 }
@@ -18,7 +25,7 @@
     color: #000000;
 }
 
-.mainRent {
+.headerRent {
     border: 1px solid #000000;
     border-radius: 5px;
     border-color: #000000;
@@ -28,7 +35,7 @@
     font-weight: 400;
 }
 
-.mainCabinet {
+.headerCabinet {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
 }

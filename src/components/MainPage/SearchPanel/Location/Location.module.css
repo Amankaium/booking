@@ -1,0 +1,45 @@
+.caption {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.locationImg {
+    width: 15px;
+    height: 20px;
+}
+
+input{
+    border: none;
+    border-right: 1px solid grey;
+    padding: 10px;
+    outline-width: 0;
+}
+
+.location {
+    position: relative;
+    user-select: none;
+}
+
+.dropdownContent {
+    width: 170px;
+    height: 130px;
+    overflow: auto;
+    position: absolute;
+    top: 110%;
+    left: 10%;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+}
+
+.dropdownItem {
+    padding: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    transition: all 0.2s;
+}
+
+.dropdownItem:hover {
+    background-color: #f4f4f4;
+}

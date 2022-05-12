@@ -1,29 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import s from './SearchPanel.module.css';
 import SearchBtn from "../../../assets/icons/search_btn.svg";
-import location from "../../../assets/icons/location.svg";
-import when from "../../../assets/icons/when.svg";
-import quantity from "../../../assets/icons/quantity.svg";
+import Location from './Location/Location';
+import When from './When/When';
+import GuestsQuantity from './GuestsQuantity/GuestsQuantity';
 
 
 const SearchPanel = () => {
+    const [selected, setSelected] = useState("")
+
     return (  
         <div className={s.search}>
             <form className={s.form}>
                 <div className={s.formItem}>
-                    <p className={s.caption} >Местоположение</p>
-                    <img className={s.location} src={location} alt="locaton-icon" />
-                    <input type="text" name='city' placeholder='Куда едете?' />
+                    <Location selected = {selected} setSelected = {setSelected} />
                 </div>
                 <div className={s.formItem}>
-                    <p className={s.caption} >Прибытие/Выезд</p>
-                    <img className={s.when} src={when} alt="calender-icon" />
-                    <input className={s.input} type="text" name='date' placeholder='Когда?' />
+                    <When />
                 </div> 
                 <div className={s.formItem}>
-                    <p className={s.caption} >Количество гостей</p>
-                    <img className={s.quantity} src={quantity} alt="quests-quantity" />
-                    <input className={`${s.input} ${s.quantity}`} type="text" name='guest' placeholder='Сколько?' />
+                    <GuestsQuantity />
                 </div> 
                 <div className={s.formItem}>
                     <img className={s.searchImg} src={ SearchBtn } alt="search-button" />
