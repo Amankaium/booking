@@ -1,6 +1,6 @@
 import React from 'react';
-import'../../../../App.css'
-import './../ResultPage.css';
+import'../../../App.css'
+import '../ResultPage.css';
 import {useState} from 'react';
 import ImageSlide from '../ImageSlide';
 
