@@ -1,0 +1,93 @@
+.result-wrapper {
+    width: 100vw;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 64px auto;
+
+}
+
+.map {
+    height: 100vh;
+    position: sticky;
+    top: 16px;
+    border: 1px solid lightgray;
+}
+
+.sub-header {
+    grid-column: 1 / 3;
+    /* background-color:#D8DBE2; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.sub-header > button {
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 400;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.sub-header > button:hover {
+    color: rgb(66, 66, 66);
+    text-decoration: underline;
+    /* background-color: rgb(200, 197, 197); */
+}
+
+.sub-header > button:active {
+    /* font-size: smaller; */
+    font-weight: 500;
+    color: #58A4B0;
+}
+.result-list{
+    text-align: left;
+    /* background-color: antiquewhite; */
+}
+
+.result-status {
+    margin-top: 20px;
+    padding: 0px 16px;
+
+}
+
+.result-card {
+    border-top: 1px solid lightgray;
+    margin: 20px 16px 0px 16px;
+    padding-top: 16px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /* cursor: pointer; */
+}
+
+.result-card > .card-img {
+    background-color: aquamarine;
+    padding: 8px;
+}
+
+.result-card > .card-info {
+    padding: 16px 0px 8px 16px;
+    display: grid;
+    grid-template-rows: 10% 35% 10% 10% 25% 10%;
+    align-items: center;
+    justify-content: left;
+}
+.result-card > .card-info >.info-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+.result-card > .card-info >.place-info, .place-extra-info {
+    font-size: 12px;
+}
+
+.result-card > .card-info >.price {
+    font-size: 20px;
+    font-weight: 600;
+    color: darkgrey;
+}
