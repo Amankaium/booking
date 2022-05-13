@@ -18,24 +18,12 @@ function App() {
           <ModalSignIn />
           <ModalSignUp />
 
-          <MainPage />
           
 
-          {/* <Routes> */}
-
-            {/* <Route path = '/search'>
-              <SearchPage />
-            </Route> */}
-
-            {/* <Route path = '/main' element = {<MainPage />} />
-              <MainPage />
-            </Route>  */}
-
-            {/* <Route path = "/rent" element = {<Rent />} />
-            <Route path = "/personalAccount" element = {<PersonalAccount />} />
-            <Route path = "/login" element = {<Login />} /> */}
-
-          {/* </Routes> */}
+          <Routes>
+            <Route path = '/main' element = {<MainPage />} />
+            <Route path = '/searchPage' element = {<SearchPage />} />
+          </Routes>
 
           <Footer />   
         </Router>
