@@ -3,6 +3,7 @@ import { BrowserRouter, Routes } from 'react-router-dom';
 import {  } from 'react-router-dom';
 import './App.css';
 import MainPage from './components/MainPage/MainPage';
+import ResultPage from './components/SearchResultPage';
 
 function App() {
   return (
