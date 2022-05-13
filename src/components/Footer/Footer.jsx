@@ -1,0 +1,43 @@
+import React from "react";
+import s from "./Footer.module.css";
+import footerLogo from "../../assets/icons/footerLogo.svg";
+import instagram from "../../assets/icons/instagram.svg";
+import whatsapp from "../../assets/icons/whatsapp.svg";
+import telegram from "../../assets/icons/telegram.svg";
+import facebook from "../../assets/icons/facebook.svg";
+import { NavLink } from "react-router-dom";
+
+
+const Footer = () => {
+    return (
+        <div className={s.footer}>
+            <div className={s.footerContent}>
+                <NavLink  to='/main'>
+                    <img className={s.footerLogo} src={footerLogo} alt="footerLogo" />
+                </NavLink>
+                <ul className={s.footerList}>
+                    <NavLink className={s.footerItem} to='/rent'>Арендую</NavLink>
+                    <NavLink className={s.footerItem} to='/rent'>Сдаю</NavLink>
+                    <NavLink className={s.footerItem} to='/offers'>Предложения</NavLink>
+                </ul>
+                <ul className={s.footerList}>
+                    <NavLink className={s.footerItem} to='/personalAccount'>Личный кабинет</NavLink>
+                    <NavLink className={s.footerItem} to='/help'>Помощь</NavLink>
+                </ul>
+                <div className={s.footerMedia}>
+                    <ul>
+                        <li>Мы в соцсетях</li>
+                    </ul>
+                    <div>
+                        <a href="#"><img className={s.footerIcon} src={instagram} alt="instagramIcon" /></a>
+                        <a href="#"><img className={s.footerIcon} src={whatsapp} alt="whatsappIcon" /></a>
+                        <a href="#"><img className={s.footerIcon} src={telegram} alt="telegramIcon" /></a>
+                        <a href="#"><img className={s.footerIcon} src={facebook} alt="facebookIcon" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Footer;

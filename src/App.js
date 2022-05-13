@@ -6,6 +6,7 @@ import MainPage from './components/MainPage/MainPage';
 import ModalSignIn from './components/MainPage/Header/Dropdown/Modals/ModalSignIn';
 import ModalSignUp from './components/MainPage/Header/Dropdown/Modals/ModalSignUp';
 import Header from './components/MainPage/Header/Header';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <MainPage />
         <ModalSignIn />
         <ModalSignUp />
+        <Footer />
         <Routes>
           {/* <Route path = "/main" element = {<MainPage />} />
           <Route path = "/rent" element = {<Rent />} />
