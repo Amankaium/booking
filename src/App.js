@@ -6,6 +6,7 @@ import ModalSignIn from './components/MainPage/Header/Dropdown/Modals/ModalSignI
 import ModalSignUp from './components/MainPage/Header/Dropdown/Modals/ModalSignUp';
 import Header from './components/MainPage/Header/Header';
 import Footer from './components/Footer/Footer';
+import ResultPage from './components/SearchResultPage/ResultPage';
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
 
           <Routes>
             <Route path = '/main' element = {<MainPage />} />
-            {/* <Route path = '/searchPage' element = {<ResultPage />} /> */}
+            <Route path = '/searchPage' element = {<ResultPage />} />
           </Routes>
 
           <Footer />   

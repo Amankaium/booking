@@ -1,11 +1,11 @@
-img {
+.slideImg {
     width: 100%;
 }
-.img-slide-container{
+.imgSlideContainer{
     position: relative;
 }
 
-.my-slide {
+.mySlide {
     display: none;
 }
 
@@ -59,7 +59,7 @@ img {
     background-color: #717171;
   }
 
-  .slidein{
+  /* .slidein{
       animation-name: slidein;
       animation-duration: 1s;
   }
@@ -71,4 +71,4 @@ img {
         to {
             margin-left: 0%;
         }
-  }
+  } */
