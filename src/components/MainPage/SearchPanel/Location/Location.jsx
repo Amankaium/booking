@@ -11,7 +11,7 @@ const Location = ({selected, setSelected}) => {
         <div className={s.location}>
             <p className={s.caption} >Местоположение</p>
             <img className={s.locationImg} src={location} alt="locaton-icon" />
-            <input className={s.dropdownBtn} type="text" name='city' placeholder='Куда едете?' value={selected} onClick={ e => setActive(!active) } />
+            <input className={s.dropdownBtn} type="text" name='city' placeholder='Куда едете?' defaultValue={selected} onClick={ e => setActive(!active) } />
             {active && (
                 <div className={s.dropdownContent}>
                     {options.map(option => (

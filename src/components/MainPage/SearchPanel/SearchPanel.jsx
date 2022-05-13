@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import s from './SearchPanel.module.css';
 import SearchBtn from "../../../assets/icons/search_btn.svg";
 import Location from './Location/Location';
@@ -22,7 +23,9 @@ const SearchPanel = () => {
                     <GuestsQuantity />
                 </div> 
                 <div className={s.formItem}>
-                    <img className={s.searchImg} src={ SearchBtn } alt="search-button" />
+                    <Link to='/searchPage'>
+                        <img className={s.searchImg} src={ SearchBtn } alt="search-button" />
+                    </Link> 
                 </div>                 
             </form>
         </div>   
