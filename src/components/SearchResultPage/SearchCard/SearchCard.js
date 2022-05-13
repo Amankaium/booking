@@ -2,7 +2,7 @@ import React from 'react';
 import'../../../App.css'
 import '../ResultPage.css';
 import {useState} from 'react';
-import ImageSlide from '../ImageSlide';
+import ImageSlide from '../ImageSlide/ImageSlide';
 
 function SearchCard() {
     const [state, setState] = useState({

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import './ResultPage.css';
+import SearchCard from './SearchCard/SearchCard';
 
 
 function CardList() {
