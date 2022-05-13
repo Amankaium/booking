@@ -22,8 +22,8 @@ input{
 
 .dropdownContent {
     width: 170px;
-    height: 130px;
-    overflow: auto;
+    /* height: 130px;
+    overflow: auto; */
     position: absolute;
     top: 110%;
     left: 10%;
