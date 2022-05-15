@@ -8,9 +8,8 @@
 }
 
 
-input{
+.guestsInput{
     border: none;
-    border-right: 1px solid grey;
     padding: 10px;
     outline-width: 0;
 }

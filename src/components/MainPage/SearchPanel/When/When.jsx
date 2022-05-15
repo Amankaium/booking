@@ -11,7 +11,7 @@ const When = () => {
         <div className={s.whenCalender}>
             <p className={s.caption} >Прибытие/Выезд</p>
             <img className={s.when} src={when} alt="calender-icon" />
-            <input className={s.input} type="text" name='date' placeholder='Когда?' onClick={() => setShowWhen(!showWhen)} />
+            <input className={s.whenInput} type="text" name='date' placeholder='Когда?' onClick={() => setShowWhen(!showWhen)} />
             {showWhen && (
                 <div className={s.dropdownContent}>
                     <Search />

@@ -9,20 +9,20 @@ const Header = () => {
 
     return (
         <nav className={s.header}>
-            <NavLink className={s.link} to='/main'>
+            <NavLink className={s.link} to='/'>
                 <img className={s.headerLogo} src={ Logo } alt="logo" />
             </NavLink>
             <div className={s.headerNav}>
-                <NavLink className={s.link} to='/rent'>
-                    <div className={s.headerRent}>Сдать жилье</div>
+                <NavLink className={navData => navData.isActive ? s.active : s.link} to='/rent'>
+                    <div>Сдать жилье</div>
                 </NavLink>
-                <NavLink className={s.link} to='/сatalogue' >
-                    <div className={s.headerCabinet}>Каталог</div>
+                <NavLink className={navData => navData.isActive ? s.active : s.link} to='/сatalogue' >
+                    <div>Каталог</div>
                 </NavLink>
-                <NavLink className={s.link} to='/personalAccount' >
-                    <div className={s.headerCabinet}>Личный кабинет</div>
+                <NavLink className={navData => navData.isActive ? s.active : s.link} to='/personalAccount' >
+                    <div>Личный кабинет</div>
                 </NavLink>
-                <NavLink className={s.link} to='/login'>
+                <NavLink className={navData => navData.isActive ? s.active : s.link} to='/'>
                     <Dropdown />
                 </NavLink>                             
             </div>            
