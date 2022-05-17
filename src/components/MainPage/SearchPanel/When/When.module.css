@@ -3,7 +3,7 @@
     font-weight: 700;
 }
 
-.whenInput{
+input{
     border: none;
     border-right: 1px solid grey;
     padding: 10px;    

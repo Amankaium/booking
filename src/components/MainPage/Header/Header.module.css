@@ -23,28 +23,22 @@
 .link {
     text-decoration: none;
     color: #000000;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
 }
-.active {
-    color: #58A4B0;
-}
-/* 
+
 .headerRent {
     border: 1px solid #000000;
     border-radius: 5px;
-    padding: 5px 15px;
-    margin-top: -6px;       
-} */
-/* .activeRent {
-    border: 1px solid #000000;
-    border-radius: 5px;
+    border-color: #000000;
     padding: 5px 15px;
     margin-top: -6px;    
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
-    border-color: #58A4B0;
-} */
+}
+
+.headerCabinet {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
 
 .dropdown > ul {
     list-style-type: none;

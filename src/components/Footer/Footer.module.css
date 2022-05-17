@@ -23,9 +23,6 @@
     text-decoration: none;
     color: #FFFFFF;
 }
-.active {
-    color: gold;
-}
 
 .footerItem::before {
     content: "";
@@ -33,17 +30,6 @@
     width: 5px;
     height: 5px;
     background-color: #FFFFFF;
-    border-radius: 50%;
-    margin-right: 10px;
-    margin-bottom: 3px;
-}
-
-.active::before {
-    content: "";
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    background-color: gold;
     border-radius: 50%;
     margin-right: 10px;
     margin-bottom: 3px;

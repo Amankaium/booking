@@ -1,5 +1,5 @@
 import React from 'react';
-import s from '../../../App.module.css'
+import'../../../App.css'
 import '../ResultPage.css';
 import {useState} from 'react';
 import ImageSlide from '../ImageSlide/ImageSlide';

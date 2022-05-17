@@ -8,7 +8,7 @@
     height: 20px;
 }
 
-.locationInput {
+input{
     border: none;
     border-right: 1px solid grey;
     padding: 10px;

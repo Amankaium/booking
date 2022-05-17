@@ -12,17 +12,17 @@ const Footer = () => {
     return (
         <div className={s.footer}>
             <div className={s.footerContent}>
-                <NavLink  to='/'>
+                <NavLink  to='/main'>
                     <img className={s.footerLogo} src={footerLogo} alt="footerLogo" />
                 </NavLink>
                 <ul className={s.footerList}>
-                    <NavLink className={navData => navData.isActive ? s.active : s.footerItem} to='/rent1'>Арендую</NavLink>
-                    <NavLink className={navData => navData.isActive ? s.active : s.footerItem} to='/rent'>Сдаю</NavLink>
-                    <NavLink className={navData => navData.isActive ? s.active : s.footerItem} to='/catalogue'>Предложения</NavLink>
+                    <NavLink className={s.footerItem} to='/rent'>Арендую</NavLink>
+                    <NavLink className={s.footerItem} to='/rent'>Сдаю</NavLink>
+                    <NavLink className={s.footerItem} to='/offers'>Предложения</NavLink>
                 </ul>
                 <ul className={s.footerList}>
-                    <NavLink className={navData => navData.isActive ? s.active : s.footerItem} to='/personalAccount'>Личный кабинет</NavLink>
-                    <NavLink className={navData => navData.isActive ? s.active : s.footerItem} to='/help'>Помощь</NavLink>
+                    <NavLink className={s.footerItem} to='/personalAccount'>Личный кабинет</NavLink>
+                    <NavLink className={s.footerItem} to='/help'>Помощь</NavLink>
                 </ul>
                 <div className={s.footerMedia}>
                     <ul>
