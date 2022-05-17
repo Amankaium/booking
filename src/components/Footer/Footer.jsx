@@ -18,7 +18,7 @@ const Footer = () => {
                 <ul className={s.footerList}>
                     <NavLink className={navData => navData.isActive ? s.active : s.footerItem} to='/rent1'>Арендую</NavLink>
                     <NavLink className={navData => navData.isActive ? s.active : s.footerItem} to='/rent'>Сдаю</NavLink>
-                    <NavLink className={navData => navData.isActive ? s.active : s.footerItem} to='/сatalogue'>Предложения</NavLink>
+                    <NavLink className={navData => navData.isActive ? s.active : s.footerItem} to='/catalogue'>Предложения</NavLink>
                 </ul>
                 <ul className={s.footerList}>
                     <NavLink className={navData => navData.isActive ? s.active : s.footerItem} to='/personalAccount'>Личный кабинет</NavLink>

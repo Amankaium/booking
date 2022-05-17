@@ -3,7 +3,7 @@ import "react-date-range/dist/styles.css"; //main style file
 import "react-date-range/dist/theme/default.css"; //theme css file
 import { DateRangePicker } from "react-date-range";
 
-const Search = () => {
+const Search = ({setInputFirstDate, setInputLastDate}) => {
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
 
@@ -15,7 +15,9 @@ const Search = () => {
 
     function handleSelect(ranges) {
         setStartDate(ranges.selection.startDate);
+        setInputFirstDate(ranges.selection.startDate);
         setEndDate(ranges.selection.endDate);
+        setInputLastDate(ranges.selection.endDate);
     }
 
     return (  

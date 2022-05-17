@@ -15,7 +15,7 @@ const Location = ({selected, setSelected}) => {
             defaultValue={selected} 
             onClick={ e => setActive(!active) } />
             {active && (
-                <div className={s.dropdownContent}>
+                <div className={s.dropdownContent} onMouseLeave={() => setActive(!active)}>
                     {options.map(option => (
                         <div onClick = { e => { setSelected(option); setActive(false) }}className={s.dropdownItem}>
                             {option}

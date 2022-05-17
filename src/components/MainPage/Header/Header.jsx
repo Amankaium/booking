@@ -16,7 +16,7 @@ const Header = () => {
                 <NavLink className={navData => navData.isActive ? s.active : s.link} to='/rent'>
                     <div>Сдать жилье</div>
                 </NavLink>
-                <NavLink className={navData => navData.isActive ? s.active : s.link} to='/сatalogue' >
+                <NavLink className={navData => navData.isActive ? s.active : s.link} to='/catalogue' >
                     <div>Каталог</div>
                 </NavLink>
                 <NavLink className={navData => navData.isActive ? s.active : s.link} to='/personalAccount' >
