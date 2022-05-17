@@ -1,4 +1,4 @@
-.primary-btn {
+.primaryBtn {
   font-size: 16px;
   font-weight: 600;
   padding: 8px 24px;
@@ -9,11 +9,12 @@
   transition-duration: 0.4s;
 }
 
-.primary-btn:hover {
+.primaryBtn:hover {
   background: #4e96a1;
+  cursor: pointer;
 }
 
-.primary-btn:active {
+.primaryBtn:active {
   font-size: 15px;
   background: #458993;
 }
