@@ -4,6 +4,8 @@ import MainPage from './components/MainPage/MainPage';
 import Header from './components/MainPage/Header/Header';
 import Footer from './components/Footer/Footer';
 import ResultPage from './components/SearchResultPage/ResultPage';
+import PersonalAccount from './components/PersonalAccount/PersonalAccount';
+import BecomeAhost from './components/BecomeAhost/BecomeAhost';
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
           <Routes>
             <Route path = '/searchPage' element = {<ResultPage />} />
             <Route path = '/' element = {<MainPage />} />
+            <Route path = '/personalAccount' element = {<PersonalAccount />} />
+            <Route path = '/becomeAhost' element = {<BecomeAhost />} />
           </Routes>
 
           <Footer />   

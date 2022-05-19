@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import s from "./Dropdown.module.css";
+import s from "./AuthorDropdown.module.css";
 import styles from "../../../../App.module.css";
 import close from "../../../../assets/icons/close.svg"
 import FB from "../../../../assets/icons/modalFacebook.svg"
@@ -7,7 +7,7 @@ import Google from "../../../../assets/icons/ModalGoogle.svg"
 import Apple from "../../../../assets/icons/ModalApple.svg"
 import Mail from "../../../../assets/icons/ModalMail.png"
 
-const Dropdown = () => {
+const AuthorDropdown = () => {
     const [isActive, setIsActive] = useState(false)
     const[modal, setModal] = useState(false);
 
@@ -71,4 +71,4 @@ const Dropdown = () => {
     )
 }
 
-export default Dropdown;
+export default AuthorDropdown;
