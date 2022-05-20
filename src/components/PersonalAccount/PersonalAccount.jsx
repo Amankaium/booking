@@ -19,6 +19,9 @@ const PersonalAccount = () => {
                 <Link to="/becomeAhost" className={ s.becomeAhost }>
                     Создать новое объявление
                 </Link>
+                <Link to="/myProfile" className={ s.myProfile }>
+                    Мой профиль
+                </Link>
             </div>
         </div>
     )

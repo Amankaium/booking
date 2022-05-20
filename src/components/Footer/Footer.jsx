@@ -16,7 +16,7 @@ const Footer = () => {
                     <img className={s.footerLogo} src={footerLogo} alt="footerLogo" />
                 </NavLink>
                 <ul className={s.footerList}>
-                    <NavLink className={navData => navData.isActive ? s.active : s.footerItem} to='/myList'>Арендую</NavLink>
+                    <NavLink className={navData => navData.isActive ? s.active : s.footerItem} to='/'>Арендую</NavLink>
                     <NavLink className={navData => navData.isActive ? s.active : s.footerItem} to='/becomeAhost'>Сдаю</NavLink>
                     <NavLink className={navData => navData.isActive ? s.active : s.footerItem} to='/catalogue'>Предложения</NavLink>
                 </ul>
