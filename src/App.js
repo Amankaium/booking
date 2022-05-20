@@ -4,6 +4,8 @@ import MainPage from './components/MainPage/MainPage';
 import Header from './components/MainPage/Header/Header';
 import Footer from './components/Footer/Footer';
 import ResultPage from './components/SearchResultPage/ResultPage';
+import OfferBlock from './components/OfferBlock/OfferBlock';
+import OnePlaceInfo from './components/OnePlaceInfo/OnePlaceInfo';
 
 function App() {
 
@@ -16,7 +18,7 @@ function App() {
             <Route path = '/searchPage' element = {<ResultPage />} />
             <Route path = '/' element = {<MainPage />} />
           </Routes>
-
+          <OnePlaceInfo/>
           <Footer />   
         </Router>
       </div>
