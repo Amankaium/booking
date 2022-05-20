@@ -1,0 +1,49 @@
+.offerBlock {
+    margin-top: 48px;
+    /* margin: 0 5% 56px; */
+    
+}
+
+.aboutBlock {
+    display: grid;
+    grid-template-rows: 56px 3px 24px;
+    gap: 24px;
+    place-items: center;
+
+}
+
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+ .aboutBlock hr {
+     width: 144px;
+     border-top: 3px solid #58A4B0;
+     margin: 56px;     
+ }
+
+.descrip {
+    text-align: center;
+}
+
+.btnContainer {
+    width: 100%;
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.outlineBtn {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: 2px solid #58A4B0;
+    color: #58A4B0;
+    background-color: white;
+    border-radius: 10px;
+
+}
