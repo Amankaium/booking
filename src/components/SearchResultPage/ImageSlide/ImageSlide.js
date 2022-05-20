@@ -19,13 +19,13 @@ export default function ImageSlide() {
                 <img className={s.slideImg} src="https://media.istockphoto.com/photos/beautiful-suburban-home-exterior-on-bright-sunny-day-with-green-grass-picture-id1312027174?b=1&k=20&m=1312027174&s=170667a&w=0&h=zK3cGGNoncen4jvTn_fK0Q0xPdF3UdKg2UryGyE9Iw8="/>
             </div>
             
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a className={s.prev} onclick="plusSlides(-1)">&#10094;</a>
+            <a className={s.next} onclick="plusSlides(1)">&#10095;</a>
 
             <div className={s.dots}>
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+                <span className={s.dot} onclick="currentSlide(1)"></span>
+                <span className={s.dot} onclick="currentSlide(2)"></span>
+                <span className={s.dot} onclick="currentSlide(3)"></span>
             </div>
         </div>
     )

@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer';
 import ResultPage from './components/SearchResultPage/ResultPage';
 import PersonalAccount from './components/PersonalAccount/PersonalAccount';
 import BecomeAhost from './components/BecomeAhost/BecomeAhost';
+import OnePlaceInfo from './components/OnePlaceInfo/OnePlaceInfo';
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
             <Route path = '/personalAccount' element = {<PersonalAccount />} />
             <Route path = '/becomeAhost' element = {<BecomeAhost />} />
           </Routes>
-
+          <OnePlaceInfo/>
           <Footer />   
         </Router>
       </div>
