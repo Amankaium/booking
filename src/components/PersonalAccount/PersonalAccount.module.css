@@ -1,0 +1,20 @@
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100px;
+    border: 1px solid grey;
+}
+
+.myTrips, .myList, .reservations, .becomeAhost, .myProfile {
+    text-decoration: none;
+    color: #000000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+.myTrips:hover, .myList:hover, .becomeAhost:hover, .reservations:hover {
+    color: #58A4B0;
+}

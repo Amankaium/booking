@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import s from './Header.module.css';
 import Logo from "../../../assets/icons/logo.svg";
-import Dropdown from '../Header/Dropdown/Dropdown';
+import AuthorDropdown from './AuthorDropdown/AuthorDropdown';
 
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
                 <img className={s.headerLogo} src={ Logo } alt="logo" />
             </NavLink>
             <div className={s.headerNav}>
-                <NavLink className={navData => navData.isActive ? s.active : s.link} to='/rent'>
+                <NavLink className={navData => navData.isActive ? s.active : s.link} to='/becomeAhost'>
                     <div>Сдать жилье</div>
                 </NavLink>
                 <NavLink className={navData => navData.isActive ? s.active : s.link} to='/catalogue' >
@@ -23,7 +23,7 @@ const Header = () => {
                     <div>Личный кабинет</div>
                 </NavLink>
                 <NavLink className={navData => navData.isActive ? s.active : s.link} to='/'>
-                    <Dropdown />
+                    <AuthorDropdown />
                 </NavLink>                             
             </div>            
         </nav>
