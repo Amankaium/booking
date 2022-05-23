@@ -7,6 +7,7 @@ import ResultPage from './components/SearchResultPage/ResultPage';
 import PersonalAccount from './components/PersonalAccount/PersonalAccount';
 import BecomeAhost from './components/BecomeAhost/BecomeAhost';
 import OnePlaceInfo from './components/OnePlaceInfo/OnePlaceInfo';
+import Payment from './components/Payment/Payment';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             <Route path = '/' element = {<MainPage />} />
             <Route path = '/personalAccount' element = {<PersonalAccount />} />
             <Route path = '/becomeAhost' element = {<BecomeAhost />} />
+            <Route path = '/Payment' element = {<Payment />} />
           </Routes>
           <OnePlaceInfo/>
           <Footer />   
