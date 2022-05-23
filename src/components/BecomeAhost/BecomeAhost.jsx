@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import s from "./BecomeAhost.module.css"
 import styles from "../../App.module.css"
+import wifi from "../../assets/icons/wifi.svg"
+import tv from "../../assets/icons/tv.svg"
+import ktchn from "../../assets/icons/kitchen.svg"
+import washmash from "../../assets/icons/washingmachine.svg"
+import ac from "../../assets/icons/aircon.svg"
+import medicine from "../../assets/icons/medicine.svg"
 
 
 const BecomeAhost = () => {
@@ -163,36 +169,49 @@ const BecomeAhost = () => {
             </form>
             <hr />
 
-            <h3 className={ s.Title }>Вы предлагаете эти популярные среди гостей удобства?</h3>  
+            <h3 className={ s.title }>Вы предлагаете эти популярные среди гостей удобства?</h3>  
             <div className={ s.convenience }>
                 <div className={ s.convenienceItem } onClick={wifiHandleClick} 
                     style={{
                         border: wifiActive ? "1px solid black" : '1px solid lightgrey'
-                    }}>WI-FI</div>
+                    }}>
+                        <img className={ s.convenienceIcon } src={wifi} alt="wifiIcon" />
+                        WI-FI
+                    </div>
                 <div className={ s.convenienceItem } onClick={tvHandleClick} 
                     style={{
                         border: tvActive ? "1px solid black" : '1px solid lightgrey'
-                    }}>Телевизор</div>
+                    }}>
+                        <img className={ s.convenienceIcon } src={tv} alt="tvIcon" />
+                        Телевизор</div>
                 <div className={ s.convenienceItem } onClick={ktchnHandleClick} 
                     style={{
                         border: ktchnActive ? "1px solid black" : '1px solid lightgrey'
-                    }}>Кухня</div>
+                    }}>
+                        <img className={ s.convenienceIcon } src={ktchn} alt="ktchnIcon" />
+                        Кухня</div>
                 <div className={ s.convenienceItem } onClick={wshHandleClick} 
                     style={{
                         border: wshActive ? "1px solid black" : '1px solid lightgrey'
-                    }}>Стиральная машина</div>
+                    }}>
+                        <img className={ s.convenienceIcon } src={washmash} alt="washingMashineIcon" />
+                        Стиральная машина</div>
                 <div className={ s.convenienceItem } onClick={acHandleClick} 
                     style={{
                         border: acActive ? "1px solid black" : '1px solid lightgrey'
-                    }}>Кондиционер</div>
+                    }}>
+                        <img className={ s.convenienceIcon } src={ac} alt="airConditionerIcon" />
+                        Кондиционер</div>
                 <div className={ s.convenienceItem } onClick={drgHandleClick} 
                     style={{
                         border: drgActive ? "1px solid black" : '1px solid lightgrey'
-                    }}>Аптечка</div>
+                    }}>
+                        <img className={ s.convenienceIcon } src={medicine} alt="medicineIcon" />
+                        Аптечка</div>
             </div>   
             <hr />
 
-            <h3 className={ s.Title }>Добавьте фотографии</h3>                
+            <h3 className={ s.title }>Добавьте фотографии</h3>                
             <div className={ s.photos }>
                 <p><span className={ s.photoText }>Перетащите фотографии сюда</span></p>
                 <p>Добавьте хотя бы 5 фото</p> 
@@ -202,15 +221,15 @@ const BecomeAhost = () => {
             </div> 
             <hr />
 
-            <h3 className={ s.Title }>Добавьте заголовок</h3> 
+            <h3 className={ s.title }>Добавьте заголовок</h3> 
             <textarea className={ s.adTitle }name="" id="" cols="100" rows="10" placeholder="Например: Прекрасный загородный дом с видом на горы"></textarea>
             <hr />
 
-            <h3 className={ s.Title }>Добавьте описание</h3> 
+            <h3 className={ s.title }>Добавьте описание</h3> 
             <textarea className={ s.description }name="" id="" cols="100" rows="10" placeholder="Например: Расслабьтесь и забудьте о тревогах в тихом оазисе."></textarea>
             <hr />
 
-            <h3 className={ s.Title }>Цена за 1 ночь</h3>
+            <h3 className={ s.title }>Цена за 1 ночь</h3>
             <input className={ s.price } type="number" placeholder="100 Сом" />
             <hr />
 
