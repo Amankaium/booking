@@ -35,7 +35,7 @@ const AuthorDropdown = () => {
                         <div className={s.modalContent}>
                             <div className={s.modalText}>
                                 <p className={s.modalSignin}>Войдите или зарегистрируйтесь</p>
-                                <h2>Добро пожаловать в KONOO!</h2>
+                                <p className={s.welcome}>Добро пожаловать в KONOO!</p>
                                 <input className={s.modalInput} type="text" placeholder="Страна/регион" />
                                 <input className={s.modalInput} type="phone" placeholder="Номер телефона в формате +996 777 777 777"/>
                                 <p className={s.modalText}>Мы позвоним вам или отправим SMS, чтобы подтвердить номер телефона. <br/>
