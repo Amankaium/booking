@@ -17,11 +17,12 @@ function App() {
           <Header />
 
           <Routes>
-            <Route path = '/searchPage' element = {<ResultPage />} />
             <Route path = '/' element = {<MainPage />} />
             <Route path = '/personalAccount' element = {<PersonalAccount />} />
             <Route path = '/becomeAhost' element = {<BecomeAhost />} />
-            <Route path = '/Payment' element = {<Payment />} />
+            <Route path = '/searchPage' element = {<ResultPage />} />
+            <Route path = '/catalogue' element = {<ResultPage />} />
+            <Route path = '/payment' element = {<Payment />} />
           </Routes>
           <OnePlaceInfo/>
           <Footer />   
