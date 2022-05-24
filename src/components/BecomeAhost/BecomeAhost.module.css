@@ -87,14 +87,22 @@
 .convenienceItem {
     border: 1px solid lightgrey;
     border-radius: 10px;
-    padding: 40px 50px;
+    margin: 0 auto;
+    height: 100px;
+    width: 200px;
+    padding-top: 40px;
 }
 
 .convenienceItem:hover {
     border: 2px solid black;
 }
 
-.Title {
+.convenienceIcon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.title {
     margin: 50px 0;
 }
 

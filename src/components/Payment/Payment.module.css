@@ -1,0 +1,62 @@
+.a{
+    text-decoration: none;
+    color: black;
+}
+
+.h1{
+   font-size: 3em;
+}
+
+.container{
+    margin: 0 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.content{
+    background-color: rgb(204, 236, 247);
+}
+
+.cvv{
+    word-spacing: 119px;
+}
+.cv{
+    word-spacing: 98px;
+    
+}
+.email{
+    word-spacing: 10px;
+}
+.ccv{
+    word-spacing: 86px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+}
+.input{
+    font-weight: 20px;
+    border-radius: 10px;
+    padding: 5px 15px;
+    border: none;
+}
+
+.font{
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+
+.submit{
+    cursor: pointer;
+    width: 200px;
+    margin-left: 20px;
+    background-color: rgb(13, 116, 220);
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 5px 40px;
+    border-radius: 10px;
+    width: 200px;
+    font-size: 1.5em;
+}
+
+.check{
+    font-size: 1.4em;
+}

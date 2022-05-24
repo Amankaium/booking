@@ -74,6 +74,9 @@
     gap: 10px;
 }
 
+.welcome {
+    font-size: 30px;
+}
 .closeModal {
     position: absolute;
     top: 10px;

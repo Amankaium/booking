@@ -7,6 +7,7 @@ import ResultPage from './components/SearchResultPage/ResultPage';
 import PersonalAccount from './components/PersonalAccount/PersonalAccount';
 import BecomeAhost from './components/BecomeAhost/BecomeAhost';
 import OnePlaceInfo from './components/OnePlaceInfo/OnePlaceInfo';
+import Payment from './components/Payment/Payment';
 
 function App() {
 
@@ -16,12 +17,13 @@ function App() {
           <Header />
 
           <Routes>
-            <Route path = '/searchPage' element = {<ResultPage />} />
             <Route path = '/' element = {<MainPage />} />
             <Route path = '/personalAccount' element = {<PersonalAccount />} />
             <Route path = '/becomeAhost' element = {<BecomeAhost />} />
             <Route path = '/placeInfo' element = {<OnePlaceInfo />} />
-            
+            <Route path = '/searchPage' element = {<ResultPage />} />
+            <Route path = '/catalogue' element = {<ResultPage />} />
+            <Route path = '/payment' element = {<Payment />} />
           </Routes>
   
           <Footer />   
