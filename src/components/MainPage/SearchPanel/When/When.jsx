@@ -54,7 +54,7 @@ const When = () => {
         <div className={s.whenCalender}>
             <p className={s.caption} >Прибытие/Выезд</p>
             <img className={s.when} src={when} alt="calender-icon" />
-            <input className={s.whenInput} type="text" name='date' placeholder='Когда?' 
+            <input className={s.whenInput} type="text" autocomplete="off" name='date' placeholder='Когда?' 
             value={`${format(range[0].startDate, "dd/MM/yyyy")} до ${format(range[0].endDate, "dd/MM/yyyy")}`}
             readOnly
             onClick={ () => setOpen(open => !open) }/>

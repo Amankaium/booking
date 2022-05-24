@@ -21,4 +21,5 @@
     padding: 15px;
     box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
     border-radius: 20px;
+    z-index: 50;
 }

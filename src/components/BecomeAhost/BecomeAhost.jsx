@@ -213,8 +213,7 @@ const BecomeAhost = () => {
 
             <h3 className={ s.title }>Добавьте фотографии</h3>                
             <div className={ s.photos }>
-                <p><span className={ s.photoText }>Перетащите фотографии сюда</span></p>
-                <p>Добавьте хотя бы 5 фото</p> 
+                <p><span className={ s.photoText }>Добавьте фотографии сюда</span></p>
                 <form action="/action_page.php" className={ s.photoLoad }>
                     <input type="file" id="myFile" name="filename" />
                 </form>

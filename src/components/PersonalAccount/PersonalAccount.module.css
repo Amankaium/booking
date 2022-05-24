@@ -15,6 +15,6 @@
     font-weight: 400;
 }
 
-.myTrips:hover, .myList:hover, .becomeAhost:hover, .reservations:hover {
+.myTrips:hover, .myList:hover, .becomeAhost:hover, .reservations:hover, .myProfile:hover {
     color: #58A4B0;
 }
