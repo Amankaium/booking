@@ -1,6 +1,15 @@
 import React from "react";
-import s from './OnePlaceInfo.css';
-import './OnePlaceInfo.css';
+// import ImageSlider from "./ImageSlider/ImageSlider";
+import s from './OnePlaceInfo.module.css';
+import st from '../../App.module.css';
+import tv from '../../assets/icons/tv.svg';
+import aircon from '../../assets/icons/aircon.svg';
+import kitchen from '../../assets/icons/kitchen.svg';
+import washmach from '../../assets/icons/washingmachine.svg';
+import wifi from '../../assets/icons/wifi.svg';
+import drug from '../../assets/icons/medicine.svg';
+import When from '../MainPage/SearchPanel/When/When';
+import GuestQuantity from '../MainPage/SearchPanel/GuestsQuantity/GuestsQuantity';
 import { rentData } from "../OfferBlock/OfferCard/data";
 
 export default function OnePlaceInfo() {
@@ -9,29 +18,73 @@ export default function OnePlaceInfo() {
     return(
         <div className={s.placeContainer}>
             {}
-            {/* <ImageSlider /> */}
-            
-                <div className={s.placeInfoContainer}>
-                    <div className={s.placeTitle}>Place Title</div>
-                    <div className={s.placeInfo}>Place Info</div>
-                    <div className={s.placeDescription}></div>
+                <div className={s.slider}>
+                    {/* <ImageSlider /> */}
+                </div>
+                <div className={s.receiptWrapper}>
+                    <div className={s.placePrice}><b>$</b> / ночь</div>
+                    <div className={s.datepicker}>
+                        <When />
+                        <GuestQuantity />
+                    </div>
+                    <button className={st.primaryBtn}>Забронировать</button>
+                    <div className={s.priceInfo}>
+                        <table>
+                            <tr>
+                                <td>Цена и количество дней</td>
+                                <td>Сумма</td>
+                            </tr>
+                            <tr>
+                                <td>Комиссия за услуги</td>
+                                <td>Сумма</td>
+                            </tr>
+                            <tr className={s.total}>
+                                <td><b>Всего</b></td>
+                                <td><b>Сумма</b></td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>    
+                <div className={s.placeInfoWrapper}>
+                    <div className={s.placeTitle}>Place Title </div>
+                    <span>Страна &bull; Город</span>
+                    <div className={s.placeInfo}>0 гость &bull; 0 спальня &bull; 0 кроватей &bull; 0 ванна</div>
+                    <hr/>
+                    <div className={s.placeDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, sequi omnis magnam tempora voluptas exercitationem asperiores, doloribus temporibus placeat voluptate obcaecati atque inventore aliquam debitis possimus sed velit esse veritatis.</div>
                     <hr/>
                     <div className={s.extraInformation}>
                         <h3>Какие удобства вас ждут?</h3> 
                         <div className={s.extraInfoTypes}>
                             <div className={s.infoItem}>
-                                <img />
-                                <span></span>
+                                <div><img  src={tv}/></div>
+                                <span>Телевизор: </span>
+                            </div>
+                            <div className={s.infoItem}>
+                                <div><img src={aircon}/></div>
+                                <span>Кондиционер: </span>
+                            </div>
+                            <div className={s.infoItem}>
+                                <div><img src={kitchen}/></div>
+                                <span>Кухня: </span>
+                            </div>
+                            <div className={s.infoItem}>
+                                <div><img src={washmach}/></div>
+                                <span>Стиральная машина: </span>
+                            </div>
+                            <div className={s.infoItem}>
+                                <div><img src={wifi}/></div>
+                                <span>Wi-fi: </span>
+                            </div>
+                            <div className={s.infoItem}>
+                                <div><img src={drug}/></div>
+                                <span>Аптечка: </span>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-
-                <div className={s.detailContainer}>
-                    <div className={s.placePrice}><b>$</b>/ночь</div>
-                </div>
+            
 
             
 

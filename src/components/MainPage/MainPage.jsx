@@ -9,7 +9,7 @@ const MainPage = () => {
         <div className={s.mainPage}>
             <div className={s.search}>
                 <SearchPanel />
-            </div>      
+            </div>   
             <OfferBlock />
         </div>
     )

@@ -25,7 +25,7 @@ export default function OfferCard(){
                     <div className={s.innerOfferContainer}>
                         <div className={s.offerCardFront}>
                             <div className={s.cardImage}>
-                                <img src={item.linkImg} alt={item.title}/>
+                                <img src={item.linkImg[0]} alt={item.title}/>
                             </div>
                             <div className={s.cardInfo}>
                                 <h3>{item.title}</h3>
@@ -36,7 +36,7 @@ export default function OfferCard(){
                         <div className={s.offerCardBack}>
                             <div className={s.cardBack}>
                                 <img src={calendarCheck} alt="" />
-                                <button className={s.secondaryBtn}><Link style={{textDecoration: 'none', color: 'inherit'}} to='/itemPage'>Узнать подробнее</Link></button>
+                                <button className={s.secondaryBtn}><Link style={{textDecoration: 'none', color: 'inherit'}} to='/placeInfo'>Узнать подробнее</Link></button>
                             </div>
                             <div className={s.cardInfo}>
                                 <h3>{item.title}</h3>
