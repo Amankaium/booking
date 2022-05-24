@@ -9,16 +9,16 @@ const Payment = () => {
         <tr>
             <td>
                 <h1 className={s.h1}>Payment options</h1> <br/>
-                <a className={s.a} href='./PaymentPage'>Credit card</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a className={s.a} href='./PaymentPage'>Online baning</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a className={s.a} href='./PaymentPage'>Payment partners</a>
+                <a className={s.a} href='./Payment'>Credit card</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a className={s.a} href='./Payment'>Online baning</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a className={s.a} href='./Payment'>Payment partners</a>
             </td>
             
         </tr>
 
         <tr>
             <td>
-            <br/> <br/><br/> <img src={card} width='60%'/>
+            <br/> <br/><br/> <img src={card} width='70%'/>
             </td>
             <td className={s.pad}>
             <br/><br/><br/>
@@ -88,7 +88,7 @@ const Payment = () => {
         <tr>
             <td>
                 <br/><b>Phone number</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input className={s.input} type="text" placeholder="+996707000000"/>
+                <input className={s.input} type="numberphone" placeholder="+996707000000"/>
             </td>
         </tr>
         
