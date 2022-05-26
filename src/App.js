@@ -18,8 +18,8 @@ function App() {
 
           <Routes>
             <Route path = '/' element = {<MainPage />} />
-            <Route path = '/personalAccount' element = {<PersonalAccount />} />
-            <Route path = '/becomeAhost' element = {<BecomeAhost />} />
+            <Route path = '/personal-account' element = {<PersonalAccount />} />
+            <Route path = '/become-a-host' element = {<BecomeAhost />} />
             <Route path = '/placeInfo' element = {<OnePlaceInfo />} />
             <Route path = '/searchPage' element = {<ResultPage />} />
             <Route path = '/catalogue' element = {<ResultPage />} />

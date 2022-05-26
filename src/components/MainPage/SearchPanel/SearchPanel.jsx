@@ -23,7 +23,7 @@ const SearchPanel = () => {
                     <GuestsQuantity />
                 </div> 
                 <div className={s.formItem}>
-                    <Link to='/searchPage'>
+                    <Link to='/search-page'>
                         <img className={s.searchImg} src={ SearchBtn } alt="search-button" />
                     </Link> 
                 </div>                 

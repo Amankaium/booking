@@ -7,19 +7,19 @@ const PersonalAccount = () => {
     return (
         <div className={ s.mainWrap }>
             <div className={ s.header }>
-                <Link to="/myTrips" className={ s.myTrips }>
+                <Link to="/my-trips" className={ s.myTrips }>
                     Мои поездки
                 </Link>
                 <Link to="/reservations" className={  s.reservations }>
                     Бронирование Вашего жилья
                 </Link>
-                <Link to="/myList" className={  s.myList }>
+                <Link to="/my-list" className={  s.myList }>
                     Мои объявления
                 </Link>
-                <Link to="/becomeAhost" className={ s.becomeAhost }>
+                <Link to="/become-a-host" className={ s.becomeAhost }>
                     Создать новое объявление
                 </Link>
-                <Link to="/myProfile" className={ s.myProfile }>
+                <Link to="/my-profile" className={ s.myProfile }>
                     Мой профиль
                 </Link>
             </div>

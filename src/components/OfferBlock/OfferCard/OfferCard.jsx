@@ -36,7 +36,7 @@ export default function OfferCard(){
                         <div className={s.offerCardBack}>
                             <div className={s.cardBack}>
                                 <img src={calendarCheck} alt="" />
-                                <button className={s.secondaryBtn}><Link style={{textDecoration: 'none', color: 'inherit'}} to='/placeInfo'>Узнать подробнее</Link></button>
+                                <button className={s.secondaryBtn}><Link style={{textDecoration: 'none', color: 'inherit'}} to='/place-info'>Узнать подробнее</Link></button>
                             </div>
                             <div className={s.cardInfo}>
                                 <h3>{item.title}</h3>
