@@ -20,8 +20,8 @@ function App() {
             <Route path = '/' element = {<MainPage />} />
             <Route path = '/personal-account' element = {<PersonalAccount />} />
             <Route path = '/become-a-host' element = {<BecomeAhost />} />
-            <Route path = '/placeInfo' element = {<OnePlaceInfo />} />
-            <Route path = '/searchPage' element = {<ResultPage />} />
+            <Route path = '/place-info' element = {<OnePlaceInfo />} />
+            <Route path = '/search-page' element = {<ResultPage />} />
             <Route path = '/catalogue' element = {<ResultPage />} />
             <Route path = '/payment' element = {<Payment />} />
           </Routes>

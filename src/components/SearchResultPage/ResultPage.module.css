@@ -1,0 +1,58 @@
+.resultWrapper {
+    width: 100vw;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 64px auto;
+
+}
+
+.map {
+    height: 100vh;
+    position: sticky;
+    top: 16px;
+    border: 1px solid lightgray;
+}
+
+.subHeader {
+    grid-column: 1 / 3;
+    /* background-color:#D8DBE2; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.subHeader > button {
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 400;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.subHeader > button:hover {
+    color: rgb(66, 66, 66);
+    text-decoration: underline;
+    /* background-color: rgb(200, 197, 197); */
+}
+
+.subHeader > button:active {
+    /* font-size: smaller; */
+    font-weight: 500;
+    color: #58A4B0;
+}
+.resultList{
+    margin: 0 auto;
+    text-align: left;
+    /* background-color: antiquewhite; */
+}
+
+.resultStatus {
+    margin-top: 20px;
+    padding: 0px 16px;
+
+}

@@ -1,0 +1,35 @@
+.resultCard {
+    border-top: 1px solid lightgray;
+    margin: 20px 16px 0px 16px;
+    padding-top: 16px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* cursor: pointer; */
+}
+
+.resultCard > .card-img {
+    background-color: aquamarine;
+    padding: 8px;
+}
+
+.resultCard > .cardInfo {
+    padding: 16px 0px 8px 16px;
+    display: grid;
+    grid-template-rows: 10% 35% 10% 10% 25% 10%;
+    align-items: center;
+    justify-content: left;
+}
+.resultCard > .cardInfo >.infoTitle {
+    font-size: 24px;
+    font-weight: 500;
+}
+.resultCard > .cardInfo >.placeInfo, .placeExtraInfo {
+    font-size: 12px;
+}
+
+.resultCard > .cardInfo >.price {
+    font-size: 20px;
+    font-weight: 600;
+    color: darkgrey;
+}
