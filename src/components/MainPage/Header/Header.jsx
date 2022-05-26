@@ -13,13 +13,13 @@ const Header = () => {
                 <img className={s.headerLogo} src={ Logo } alt="logo" />
             </NavLink>
             <div className={s.headerNav}>
-                <NavLink className={navData => navData.isActive ? s.active : s.link} to='/becomeAhost'>
+                <NavLink className={navData => navData.isActive ? s.active : s.link} to='/become-a-host'>
                     <div>Сдать жилье</div>
                 </NavLink>
                 <NavLink className={navData => navData.isActive ? s.active : s.link} to='/catalogue' >
                     <div>Каталог</div>
                 </NavLink>
-                <NavLink className={navData => navData.isActive ? s.active : s.link} to='/personalAccount' >
+                <NavLink className={navData => navData.isActive ? s.active : s.link} to='/personal-account' >
                     <div>Личный кабинет</div>
                 </NavLink>
                 <NavLink className={navData => navData.isActive ? s.active : s.link} to='/'>
