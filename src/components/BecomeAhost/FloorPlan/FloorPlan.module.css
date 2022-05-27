@@ -1,0 +1,31 @@
+.floorPlan {
+    display: flex;
+    gap: 30px;
+}
+
+.guest {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.quantityItem {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.sign {
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.sign:hover {
+    background-color: rgb(243, 240, 240);
+    border-color: grey;
+    cursor: pointer;
+}

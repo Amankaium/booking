@@ -1,0 +1,12 @@
+.location {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.locationDetail {
+    height: 45px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}

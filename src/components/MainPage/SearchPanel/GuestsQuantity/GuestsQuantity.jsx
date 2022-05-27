@@ -39,7 +39,7 @@ const GuestsQuantity = () => {
         <div className={s.guestsQuantity}>
             <p className={s.caption} >Количество гостей</p>
             <img className={s.quantity} src={quantity} alt="quests-quantity" />
-            <input className={`${s.guestsInput} ${s.quantity}`} type="text" autocomplete="off" name='guest' placeholder='Сколько?' 
+            <input className={`${s.guestsInput} ${s.quantity}`} type="text" autoComplete="off" name='guest' placeholder='Сколько?' 
             onClick={ () => setOpen(open => !open) } 
             defaultValue = {adults || kids || infants ? `${adults} + ${kids} + ${infants}` : '' } />
 

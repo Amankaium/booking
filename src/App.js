@@ -8,6 +8,7 @@ import PersonalAccount from './components/PersonalAccount/PersonalAccount';
 import BecomeAhost from './components/BecomeAhost/BecomeAhost';
 import OnePlaceInfo from './components/OnePlaceInfo/OnePlaceInfo';
 import Payment from './components/Payment/Payment';
+import MyProfile from './components/PersonalAccount/MyProfile/MyProfile';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path = '/' element = {<MainPage />} />
             <Route path = '/personal-account' element = {<PersonalAccount />} />
+            <Route path = '/my-profile' element = {<MyProfile />} />
             <Route path = '/become-a-host' element = {<BecomeAhost />} />
             <Route path = '/place-info' element = {<OnePlaceInfo />} />
             <Route path = '/search-page' element = {<ResultPage />} />
