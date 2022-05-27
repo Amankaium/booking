@@ -12,7 +12,7 @@
     justify-content: space-around;
 }
 
-.propertyItem {
+/* .propertyItem {
     border: 1px solid lightgrey;
     border-radius: 5px;
     padding: 10px;
@@ -23,9 +23,9 @@
 .propertyItem:hover {
     border: 1px solid black;
     background-color: rgb(243, 240, 240);
-}
+} */
 
-.location {
+/* .location {
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -36,9 +36,9 @@
     margin-bottom: 10px;
     border-radius: 5px;
     padding: 10px;
-}
+} */
 
-.floorPlan {
+/* .floorPlan {
     display: flex;
     gap: 30px;
 }
@@ -68,13 +68,10 @@
     background-color: rgb(243, 240, 240);
     border-color: grey;
     cursor: pointer;
-}
+} */
 
-.Title {
-    margin: 50px 0;
-}
 
-.convenience {
+/* .convenience {
     display: grid;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 100px 100px;
@@ -100,13 +97,13 @@
 .convenienceIcon {
     width: 20px;
     margin-right: 10px;
-}
+} */
 
-.title {
+/* .title {
     margin: 50px 0;
-}
+} */
 
-.photos {
+/* .photos {
     max-width: 500px;
     max-height: 500px;
     border: 1px solid lightgrey;
@@ -125,33 +122,33 @@
 
 .photoLoad {
     margin-top: 30px;
-}
+} */
 
-.adTitle {
+/* .adTitle {
     padding: 10px;
     margin-bottom: 20px;
-}
+} */
 
-.description {
+/* .description {
     padding: 10px;
     margin-bottom: 20px;
-}
+} */
 
-.price {
+/* .price {
     width: 500px;
     padding: 20px;
     font-size: 30px;
     margin-bottom: 20px;
-}
+} */
 
-.important {
+/* .important {
     text-align: start;
     margin: 20px 0;
 }
 
 .alert {
     font-weight: bold;
-}
+} */
 
 .Btn {
     width: 500px;

@@ -1,0 +1,24 @@
+.photos {
+    max-width: 500px;
+    max-height: 500px;
+    border: 1px solid lightgrey;
+    padding: 100px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.photoText {
+    font-weight: bold;
+}
+
+.photoLoad {
+    margin-top: 30px;
+}
+
+.title {
+    margin: 50px 0;
+}

@@ -39,7 +39,7 @@ const Location = ({selected, setSelected}) => {
         <div className={s.location}>
             <p className={s.caption} >Местоположение</p>
             <img className={s.locationImg} src={location} alt="locaton-icon" />
-            <input className={s.locationInput} type="text" autocomplete="off" name='city' placeholder='Куда едете?' 
+            <input className={s.locationInput} type="text" autoComplete="off" name='city' placeholder='Куда едете?' 
             defaultValue={selected} 
             onClick={ () => setOpen(open => !open) } />
             <div ref={refOne}>

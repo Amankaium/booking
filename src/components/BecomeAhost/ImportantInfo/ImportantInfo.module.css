@@ -1,0 +1,8 @@
+.important {
+    text-align: start;
+    margin: 20px 0;
+}
+
+.alert {
+    font-weight: bold;
+}

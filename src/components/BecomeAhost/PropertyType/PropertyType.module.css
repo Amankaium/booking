@@ -1,0 +1,12 @@
+.propertyItem {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.propertyItem:hover {
+    border: 1px solid black;
+    background-color: rgb(243, 240, 240);
+}
