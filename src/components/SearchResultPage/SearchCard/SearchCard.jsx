@@ -9,7 +9,6 @@ function SearchCard({place}) {
 
     return (
         <div className={s.resultCard}>
-                    {/* <img src="" alt="" /> */}
                     <ImageSlide />
                     <div className={s.cardInfo}>
                         <div className={s.rentType}>{place.type}</div>
