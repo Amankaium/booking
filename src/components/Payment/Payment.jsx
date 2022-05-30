@@ -8,10 +8,10 @@ const Payment = () => {
         <table className={s.container}> 
         <tr>
             <td>
-                <h1 className={s.h1}>Payment options</h1> <br/>
-                <a className={s.a} href='./Payment'>Credit card</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a className={s.a} href='./Payment'>Online baning</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a className={s.a} href='./Payment'>Payment partners</a>
+                <h1 className={s.h1}>Варианты оплаты</h1> <br/>
+                <a className={s.a} href='./Payment'>Кредитная карта</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a className={s.a} href='./Payment'>Онлайн банкинг</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a className={s.a} href='./Payment'>Платежные пратнеры</a>
             </td>
             
         </tr>
@@ -22,28 +22,28 @@ const Payment = () => {
             </td>
             <td className={s.pad}>
             <br/><br/><br/>
-                <h1 className={s.h1}>Booking summary</h1>    
+                <h1 className={s.h1}>Сводка бронирования</h1>    
             </td>
         </tr>
 
         <tr>
             <td> <br/><br/>
-                <b>Cardholder name</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <b>Имя владельца карты</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input className={s.input} type="text" placeholder="Ryspaev Baiysh"/>
             </td>   
             <td width="50%" className={s.font}> <br/>
-                <p>Hotel free - 2 adult &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 120$</p>  <br/>  
-                <p>Taxes and fees &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.60$</p>  
+                <p>Отель бесплатно - 2 взрослых &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 120$</p>  <br/>  
+                <p>Налоги и сборы &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.60$</p>  
             </td>      
         </tr>
 
         <tr>
             <td> <br/><br/>
-                <b>Card number</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <b>Номер карты</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input className={s.input} type="password" placeholder="1111-2222-3333-4444 "/>
             </td>
             <td className={s.ccv}><br/>
-                <b>Subtotal 130.60$</b>      
+                <b>Итого 130.60$</b>      
             </td>
         </tr>
 
@@ -53,28 +53,28 @@ const Payment = () => {
                 <input className={s.input} type="password " placeholder="1234 "/>
             </td>
             <td className={s.font}>
-                <p>Service taxes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 4.20$</p>          
+                <p>Налоги на услуги &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 4.20$</p>          
             </td>
         </tr>
 
         <tr>
             <td className={s.cv}><br/><br/>
-                <b>MM/YY</b>&nbsp;
+                <b>ДД/ММ/ГГ</b>&nbsp;
                 <input className={s.input} type="email " placeholder="18.08.2020 "/>
             </td>
             <td ClassName={s.ccv}><br/><br/>
-                <h1 className={s.h1}>Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 134.80$</h1>
+                <h1 className={s.h1}>Oбщий &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 134.80$</h1>
             </td>
         </tr>
 
         <tr>
             <td> 
             <br/><br/><br/><br/>
-               <h3>Contact information</h3>
+               <h3>Контакты</h3>
             </td>
             <td>
                  <br/><br/><br/><br/>
-                <button type="submit" className={s.submit}>Pay now</button>
+                <button type="submit" className={s.submit}>Платить</button>
             </td>
         </tr>
 
@@ -87,7 +87,7 @@ const Payment = () => {
 
         <tr>
             <td>
-                <br/><b>Phone number</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br/><b>Номер телефона</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input className={s.input} type="numberphone" placeholder="+996707000000"/>
             </td>
         </tr>
@@ -96,7 +96,7 @@ const Payment = () => {
             <td>
                 <br/><br/><br/>
                 <input className={s.input} type="checkbox"/>  &nbsp;&nbsp;&nbsp;&nbsp;
-                <b className={s.check}>I accept with term and conditions</b>
+                <b className={s.check}>Я принимаю условия</b>
                 <br/><br/><br/><br/><br/>
             </td>
         </tr>
