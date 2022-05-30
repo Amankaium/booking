@@ -3,8 +3,14 @@
     color: black;
 }
 
-.h1{
-   font-size: 3em;
+.title{
+   font-size: 2em;
+   font-weight: bold;
+   margin-top: 50px;
+}
+.total{
+   font-size: 1.5em;
+   font-weight: bold;
 }
 
 .container{
@@ -58,5 +64,5 @@
 }
 
 .check{
-    font-size: 1.4em;
+    font-size: 1em;
 }
