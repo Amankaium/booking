@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import s from './OfferBlock.module.css';
 import OfferCard from './OfferCard/OfferCard';
 
 
-
 export default function OfferBlock() {
+    
+
     return (
         <div className={s.offerBlock}>
             <div className={s.aboutBlock}>
@@ -14,7 +16,7 @@ export default function OfferBlock() {
             </div>
             <OfferCard />
             <div className={s.btnContainer}>
-                <button className={s.outlineBtn}>Показать еще</button>
+                <button className={s.outlineBtn}><Link to='/catalogue' style={{textDecoration: 'none', color: 'inherit'}}>Показать еще</Link></button>
             </div>
 
         </div>

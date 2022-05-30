@@ -1,35 +1,23 @@
 import React from 'react';
-import s from '../../../App.module.css'
-import '../ResultPage.css';
-import {useState} from 'react';
+import { Link } from 'react-router-dom';
+import st from '../../../App.module.css'
+import s from './SearchCard.module.css';
 import ImageSlide from '../ImageSlide/ImageSlide';
 
-function SearchCard() {
-    const [state, setState] = useState({
-        place: {
-            placeType: "",
-            description: "",
-            guest: "0",
-            room:"0",
-            bed: "0",
-            bath: "Ванна",
-            kitchen: "Кухня",
-            conditioner: "Кондиционер",
-            price: "0",
-        }
-    })
-
+function SearchCard({place}) {
+    console.log(place)
 
     return (
-        <div className='result-card'>
+        <div className={s.resultCard}>
+                    {/* <img src="" alt="" /> */}
                     <ImageSlide />
-                    <div className='card-info'>
-                        <div className='rent-type'>rent-type {state.place.placeType}</div>
-                        <div className='info-title'>Rent Title {state.place.description}</div>
-                        <div className='place-info'>{state.place.guest} гостей &bull; {state.place.room} спален &bull; {state.place.bed} кроватей</div>
-                        <div className='place-extra-info'>  {state.place.bath} &bull; {state.place.kitchen} &bull; {state.place.conditioner}</div>
-                        <div className='price'>{state.place.price} / ночь</div>
-                        <button className='primary-btn'>Reserve</button>
+                    <div className={s.cardInfo}>
+                        <div className={s.rentType}>{place.type}</div>
+                        <div className={s.infoTitle}>{place.title}</div>
+                        <div className={s.placeInfo}>{place.guest} гостей &bull; {place.room} спален &bull; {place.bed} кроватей</div>
+                        <div className={s.placeExtraInfo}>  {place.wifi} &bull; {place.kitchen} &bull; {place.conditioner}</div>
+                        <div className={s.price}><b>{place.price} KGS</b> / ночь</div>
+                        <button className={st.primaryBtn}><Link to={`/place-info/${place.id}/`} style={{textDecoration: 'none', color: 'inherit'}}>Подробнее</Link></button>
                     </div>
                 </div>
     )

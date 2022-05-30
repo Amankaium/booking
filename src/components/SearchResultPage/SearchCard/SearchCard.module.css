@@ -1,14 +1,15 @@
 .resultCard {
-    border-top: 1px solid lightgray;
-    margin: 20px 16px 0px 16px;
-    padding-top: 16px;
+    margin: 20px 16px;
+    padding: 16px 16px 16px 0px;
     height: 250px;
     display: grid;
-    grid-template-columns: auto auto;
-    /* cursor: pointer; */
+    grid-template-columns: 50% 50%;
+    box-shadow: 0px 5px 15px rgba(88, 164, 176, 0.2);
+    border-radius: 10px;
+    background-color: white;
 }
 
-.resultCard > .card-img {
+.resultCard > .cardImg {
     background-color: aquamarine;
     padding: 8px;
 }
@@ -16,12 +17,14 @@
 .resultCard > .cardInfo {
     padding: 16px 0px 8px 16px;
     display: grid;
-    grid-template-rows: 10% 35% 10% 10% 25% 10%;
     align-items: center;
-    justify-content: left;
 }
 .resultCard > .cardInfo >.infoTitle {
-    font-size: 24px;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    font-size: 18px;
     font-weight: 500;
 }
 .resultCard > .cardInfo >.placeInfo, .placeExtraInfo {
@@ -29,7 +32,5 @@
 }
 
 .resultCard > .cardInfo >.price {
-    font-size: 20px;
-    font-weight: 600;
-    color: darkgrey;
+    font-size: 16px;
 }
