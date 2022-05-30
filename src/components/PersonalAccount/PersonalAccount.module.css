@@ -18,3 +18,11 @@
 .myTrips:hover, .myList:hover, .becomeAhost:hover, .reservations:hover, .myProfile:hover {
     color: #58A4B0;
 }
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
