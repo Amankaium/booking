@@ -12,147 +12,18 @@
     justify-content: space-around;
 }
 
-/* .propertyItem {
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-.propertyItem:hover {
-    border: 1px solid black;
-    background-color: rgb(243, 240, 240);
-} */
-
-/* .location {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-}
-
-.locationDetail {
-    height: 45px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    padding: 10px;
-} */
-
-/* .floorPlan {
-    display: flex;
-    gap: 30px;
-}
-
-.guest {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
-}
-
-.quantityItem {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.sign {
-    border: 2px solid lightgrey;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    margin-bottom: 10px;
-}
-
-.sign:hover {
-    background-color: rgb(243, 240, 240);
-    border-color: grey;
-    cursor: pointer;
-} */
-
-
-/* .convenience {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 100px 100px;
-    gap: 30px;
-    margin-bottom: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-.convenienceItem {
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-    margin: 0 auto;
-    height: 100px;
-    width: 200px;
-    padding-top: 40px;
-}
-
-.convenienceItem:hover {
-    border: 2px solid black;
-}
-
-.convenienceIcon {
-    width: 20px;
-    margin-right: 10px;
-} */
-
-/* .title {
-    margin: 50px 0;
-} */
-
-/* .photos {
-    max-width: 500px;
-    max-height: 500px;
-    border: 1px solid lightgrey;
-    padding: 100px;
-    border-radius: 10px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.photoText {
-    font-weight: bold;
-}
-
-.photoLoad {
-    margin-top: 30px;
-} */
-
-/* .adTitle {
-    padding: 10px;
-    margin-bottom: 20px;
-} */
-
-/* .description {
-    padding: 10px;
-    margin-bottom: 20px;
-} */
-
-/* .price {
-    width: 500px;
-    padding: 20px;
-    font-size: 30px;
-    margin-bottom: 20px;
-} */
-
-/* .important {
-    text-align: start;
-    margin: 20px 0;
-}
-
-.alert {
-    font-weight: bold;
-} */
-
 .Btn {
     width: 500px;
     font-size: 20px;
     padding: 20px;
     margin: 50px 0;
+}
+
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }

@@ -8,10 +8,10 @@ const Payment = () => {
         <table className={s.container}> 
         <tr>
             <td>
-                <h1 className={s.h1}>Варианты оплаты</h1> <br/>
+                <p className={s.title}>Варианты оплаты</p> <br/>
                 <a className={s.a} href='./Payment'>Кредитная карта</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a className={s.a} href='./Payment'>Онлайн банкинг</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a className={s.a} href='./Payment'>Платежные пратнеры</a>
+                <a className={s.a} href='./Payment'>Платежные партнеры</a>
             </td>
             
         </tr>
@@ -22,7 +22,7 @@ const Payment = () => {
             </td>
             <td className={s.pad}>
             <br/><br/><br/>
-                <h1 className={s.h1}>Сводка бронирования</h1>    
+            <p className={s.title}>Информация по бронированию</p>    
             </td>
         </tr>
 
@@ -32,7 +32,7 @@ const Payment = () => {
                 <input className={s.input} type="text" placeholder="Ryspaev Baiysh"/>
             </td>   
             <td width="50%" className={s.font}> <br/>
-                <p>Отель бесплатно - 2 взрослых &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 120$</p>  <br/>  
+                <p>Оплата Отелю - 2 взрослых &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 120$</p>  <br/>  
                 <p>Налоги и сборы &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.60$</p>  
             </td>      
         </tr>
@@ -41,9 +41,6 @@ const Payment = () => {
             <td> <br/><br/>
                 <b>Номер карты</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input className={s.input} type="password" placeholder="1111-2222-3333-4444 "/>
-            </td>
-            <td className={s.ccv}><br/>
-                <b>Итого 130.60$</b>      
             </td>
         </tr>
 
@@ -60,10 +57,10 @@ const Payment = () => {
         <tr>
             <td className={s.cv}><br/><br/>
                 <b>ДД/ММ/ГГ</b>&nbsp;
-                <input className={s.input} type="email " placeholder="18.08.2020 "/>
+                <input className={s.input} type="number" placeholder="18.08.2020 "/>
             </td>
             <td ClassName={s.ccv}><br/><br/>
-                <h1 className={s.h1}>Oбщий &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 134.80$</h1>
+            <p className={s.total}>Oбщий &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 134.80$</p>
             </td>
         </tr>
 
@@ -74,7 +71,7 @@ const Payment = () => {
             </td>
             <td>
                  <br/><br/><br/><br/>
-                <button type="submit" className={s.submit}>Платить</button>
+                <button type="submit" className={s.submit}>Оплатить</button>
             </td>
         </tr>
 

@@ -1,73 +1,112 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import s from "./AuthorDropdown.module.css";
-import styles from "../../../../App.module.css";
-import close from "../../../../assets/icons/close.svg"
-import FB from "../../../../assets/icons/modalFacebook.svg"
-import Google from "../../../../assets/icons/ModalGoogle.svg"
-import Apple from "../../../../assets/icons/ModalApple.svg"
-import Mail from "../../../../assets/icons/ModalMail.png"
+import { LoginContext } from "../../../../App";
+import ModalSignUp from "./ModalSignUp/ModalSignUp";
+import ModalSignIn from "./ModalSignIn/ModalSignIn";
 
-const AuthorDropdown = () => {
+const AuthorDropdown = ({ functionForTokenUpdate, setLogin }) => {
     const [isActive, setIsActive] = useState(false)
-    const[modal, setModal] = useState(false);
+    const [modalSignUp, setModalSignUp] = useState(false);
+    const [modalSignIn, setModalSignIn] = useState(false);
 
-    const toggleModal = (e) => {
-        setModal(!modal)
+
+    const toggleModalSignUp = () => {
+        setModalSignUp(!modalSignUp)
     }
 
-    
+    const toggleModalSignIn = () => {
+        setModalSignIn(!modalSignIn)
+    }
+
+    const SignOut = () => {
+        setLogin(false)
+        functionForTokenUpdate("")
+    }
+
+
+    const UserLogin = useContext(LoginContext)
+
+    const [user, setUser] = useState({})
+
+    function updateInput(event) {
+        setUser({
+            ...user,
+            [event.target.name]: event.target.value
+        })
+    }
+
+    function auth(event) {
+        event.preventDefault()
+        fetch(
+            'http://kaiaman.pythonanywhere.com/api/login',
+            {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json;charset=utf-8',
+                },
+                body: JSON.stringify({
+                    username: user.username,
+                    password: user.password,
+                })
+            }
+        ).then(r => r.json())
+            .then(({ key }) => {
+                functionForTokenUpdate(key)
+                setLogin(true)
+                setModalSignIn(!modalSignIn)
+            })
+    }
+
+    function register(event) {
+        event.preventDefault()
+        fetch(
+            'http://kaiaman.pythonanywhere.com/api/registration',
+            {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json;charset=utf-8',
+                },
+                body: JSON.stringify({
+                    username: user.username,
+                    password: user.password,
+                    email: user.email,
+                })
+            }
+        ).then(r => r.json())
+            .then(() => {
+                alert('Success, please login');
+                setModalSignUp(false)
+                setModalSignIn(true)
+            })
+    }
+
     return (
-        <div className={s.dropdown}>
-            <div className={s.dropdownBtn} onClick={ (e) => setIsActive(!isActive) }>Вход</div>
+        <form className={s.dropdown}>
+            {UserLogin ? (
+                <div className={s.dropdownBtn} onClick={SignOut}>Выход</div>
+            ) : <div className={s.dropdownBtn} onClick={() => setIsActive(!isActive)}>Вход</div>
+            }
+
             {isActive && (
                 <div className={s.dropdownContent} onMouseLeave={() => setIsActive(!isActive)}>
-                    <div className={s.dropdownItem} onClick={toggleModal}>
+                    <div className={s.dropdownItem} onClick={toggleModalSignUp}>
                         Регистрация
                     </div>
-                    <div className={s.dropdownItem} onClick={toggleModal}>
+                    <div className={s.dropdownItem} onClick={toggleModalSignIn}>
                         Вход
                     </div>
                 </div>
-            )}  
-            {modal && (
-                <div className={s.modal}>
-                    <div className={s.overlay} >
-                        <div className={s.modalContent}>
-                            <div className={s.modalText}>
-                                <p className={s.modalSignin}>Войдите или зарегистрируйтесь</p>
-                                <p className={s.welcome}>Добро пожаловать в KONOO!</p>
-                                <input className={s.modalInput} type="text" placeholder="Страна/регион" />
-                                <input className={s.modalInput} type="phone" placeholder="Номер телефона в формате +996 777 777 777"/>
-                                <p className={s.modalText}>Мы позвоним вам или отправим SMS, чтобы подтвердить номер телефона. <br/>
-                                Применяются стандартные условия вашего тарифа на прием сообщений и передачу данных. <br/>
-                                Политика конфиденциальности</p>
-                                <button className={`${styles.primaryBtn} ${s.modalBtn}`} 
-                                onClick={ e =>  toggleModal(e)}>Продолжить</button>
-                                <p>или</p>
-                                <button className={s.signWithBtn} onClick={ e =>  toggleModal(e)}>
-                                    <img className={s.signWithIcon} src={FB} alt="facebookIcon" />
-                                    <a className={s.signWithLink} href="#">С помощью Facebook</a>
-                                </button>
-                                <button className={s.signWithBtn} onClick={ e =>  toggleModal(e)}>
-                                    <img className={s.signWithIcon} src={Google} alt="GoogleIcon" />
-                                    <a className={s.signWithLink} href="#">С помощью Google</a>
-                                </button>
-                                <button className={s.signWithBtn} onClick={ e =>  toggleModal(e)}>
-                                    <img className={s.signWithIcon} src={Apple} alt="AppleIcon" />
-                                    <a className={s.signWithLink} href="#">Продолжить с Apple</a>
-                                </button>
-                                <button className={s.signWithBtn} onClick={ e =>  toggleModal(e)}>
-                                    <img className={s.signWithIcon} src={Mail} alt="MailIcon" />
-                                    <a className={s.signWithLink} href="#">С помощью эл.почты</a>
-                                </button>
-                            </div>
-                            <div className={s.closeModal} onClick={ e =>  toggleModal(e)}><img src={close} alt="closeMark" /></div>
-                        </div>                       
-                    </div>    
-                </div> 
             )}
-                   
-        </div>
+
+            {modalSignUp && (
+                <ModalSignUp toggleModalSignUp={toggleModalSignUp} register={register} user={user} setUser={setUser} updateInput={updateInput} />
+            )}
+
+            {modalSignIn && (
+                <ModalSignIn toggleModalSignIn={toggleModalSignIn} auth={auth} user={user} setUser={setUser} updateInput={updateInput} />
+            )}
+
+        </form>
     )
 }
 

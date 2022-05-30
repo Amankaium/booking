@@ -5,7 +5,7 @@ import Logo from "../../../assets/icons/logo.svg";
 import AuthorDropdown from './AuthorDropdown/AuthorDropdown';
 
 
-const Header = () => {
+const Header = ({functionForTokenUpdate, setLogin}) => {
 
     return (
         <nav className={s.header}>
@@ -13,7 +13,7 @@ const Header = () => {
                 <img className={s.headerLogo} src={ Logo } alt="logo" />
             </NavLink>
             <div className={s.headerNav}>
-                <NavLink className={navData => navData.isActive ? s.active : s.link} to='/become-a-host'>
+                <NavLink className={navData => navData.isActive ? s.active : s.link } to='/become-a-host'>
                     <div>Сдать жилье</div>
                 </NavLink>
                 <NavLink className={navData => navData.isActive ? s.active : s.link} to='/catalogue' >
@@ -22,9 +22,9 @@ const Header = () => {
                 <NavLink className={navData => navData.isActive ? s.active : s.link} to='/personal-account' >
                     <div>Личный кабинет</div>
                 </NavLink>
-                <NavLink className={navData => navData.isActive ? s.active : s.link} to='/'>
-                    <AuthorDropdown />
-                </NavLink>                             
+                <div className={navData => navData.isActive ? s.active : s.link} >
+                    <AuthorDropdown functionForTokenUpdate = {functionForTokenUpdate} setLogin={setLogin}/>
+                </div>                             
             </div>            
         </nav>
     )
