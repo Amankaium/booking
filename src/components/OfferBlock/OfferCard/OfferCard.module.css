@@ -1,15 +1,13 @@
 .offerCardContainer {
-    /* margin: 0 auto; */
     margin-top: 32px;
-    /* justify-self: center; */
 }
 
 .offerContainer {
     height: 384px;
     max-width: 240px;
     margin: 8px 8px 24px 8px;    
-    /* perspective: 1000px; */
 }
+
 .innerOfferContainer {
     position: relative;
     width: 100%;
@@ -64,17 +62,21 @@
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
+    line-height: 1.5em;
+    height: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .offerCardFront .cardInfo p {
     color: gray;
     font-size: 12px;
-    margin: 24px 0;
+    margin: 16px 0;
 }
 
 .offerCardFront > .cardInfo > h4 {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 400;
     color: #58A4B0;
 }
 
@@ -103,17 +105,22 @@
     font-weight: 600;
     text-transform: uppercase;
     color: white;
+    line-height: 1.5em;
+    height: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 
 .offerCardBack .cardInfo p {
     color: white;
     font-size: 12px;
-    margin: 24px 0;
+    margin: 16px 0;
 }
 
 .offerCardBack .cardInfo h4 {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 400;
     color: white;
 }
 

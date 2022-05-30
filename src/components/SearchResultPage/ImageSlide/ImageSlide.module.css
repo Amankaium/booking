@@ -1,5 +1,6 @@
 .slideImg {
-    width: 100%;
+    width: 500px;
+    background-color: #717171;
 }
 .imgSlideContainer{
     position: relative;

@@ -1,9 +1,10 @@
 .resultWrapper {
     width: 100vw;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 64px auto;
+    /* height: fit-content; */
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    margin-bottom: 56px;;
+
 
 }
 
@@ -21,6 +22,9 @@
     align-items: center;
     justify-content: space-evenly;
     border-bottom: 1px solid lightgray;
+    position: sticky;
+    top: 80px;
+    background-color: white;
 
 }
 
@@ -32,6 +36,7 @@
     border: none;
     border-radius: 10px;
     transition-duration: 0.5s;
+    
 }
 
 .subHeader > button:hover {
@@ -46,13 +51,16 @@
     color: #58A4B0;
 }
 .resultList{
+    width: 80%;
     margin: 0 auto;
     text-align: left;
+    display: grid;
+    grid-template-columns: auto auto;
     /* background-color: antiquewhite; */
 }
 
 .resultStatus {
     margin-top: 20px;
-    padding: 0px 16px;
-
+    padding: 16px;
+    border-bottom: 1px solid lightgray;
 }
