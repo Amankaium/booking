@@ -46,13 +46,13 @@ const BecomeAhost = ({ functionForTokenUpdate, setLogin }) => {
 
     const [place, setPlace] = useState({
         type: "",
-        guest: "",
-        bed: "",
-        room: "",
-        bath: "",
+        guest: 0,
+        bed: 0,
+        room: 0,
+        bath: 0,
         city: "",
-        building: "",
-        flat: "",
+        building: 0,
+        flat: 0,
         wifi: "",
         tv: "",
         kitchen: "",
@@ -62,7 +62,7 @@ const BecomeAhost = ({ functionForTokenUpdate, setLogin }) => {
         photo: "",
         title: "",
         description: "",
-        price: "",
+        price: 0,
     })
 
 
@@ -71,20 +71,25 @@ const BecomeAhost = ({ functionForTokenUpdate, setLogin }) => {
 
         axios.post(
             "http://kaiaman.pythonanywhere.com/api/booking/apartments/",
-            place
+            place,
+            {
+                headers: {
+                    "Content-Type": "multipart/form-data"
+                }
+            }
         ).then(response => {
             console.log(response)
             if (response.status === 201) {
                 alert("Ваше жилье добавлено в базу")
                 setPlace({
                     type: "",
-                    guest: "",
-                    bed: "",
-                    room: "",
-                    bath: "",
+                    guest: 0,
+                    bed: 0,
+                    room: 0,
+                    bath: 0,
                     city: "",
-                    building: "",
-                    flat: "",
+                    building: 0,
+                    flat: 0,
                     wifi: "",
                     tv: "",
                     kitchen: "",
@@ -94,7 +99,7 @@ const BecomeAhost = ({ functionForTokenUpdate, setLogin }) => {
                     photo: "",
                     title: "",
                     description: "",
-                    price: "",
+                    price: 0,
                 })
             }
         }).catch(error => {
