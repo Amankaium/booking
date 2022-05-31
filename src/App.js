@@ -8,7 +8,11 @@ import PersonalAccount from './components/PersonalAccount/PersonalAccount';
 import BecomeAhost from './components/BecomeAhost/BecomeAhost';
 import OnePlaceInfo from './components/OnePlaceInfo/OnePlaceInfo';
 import Payment from './components/Payment/Payment';
-
+import Block from './components/Block/Block';
+import CardOne from './components/Block/CardOne/CardOne';
+import CardTwo from './components/Block/CardTwo/CardTwo';
+import CardThree from './components/Block/CardThree/CardThree';
+import CardFour from './components/Block/CardFour/CardFour';
 
 export const LoginContext = React.createContext(false);
 
@@ -36,6 +40,11 @@ function App() {
               <Route path = '/search-page' element = {<ResultPage />} />
               <Route path = '/catalogue' element = {<ResultPage />} />
               <Route path = '/payment' element = {<Payment />} />
+              <Route path = '/block' element = {<Block />} />
+              <Route path = '/CardOne' element = {<CardOne />} />
+              <Route path = '/CardTwo' element = {<CardTwo />} />
+              <Route path = '/CardThree' element = {<CardThree />} />
+              <Route path = '/CardFour' element = {<CardFour />} />
             </Routes>
     
             <Footer />   
