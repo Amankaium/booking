@@ -24,6 +24,10 @@ export default function OnePlaceInfo() {
         .then(response => setPlace (response.data))
     }
     
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+      
     useEffect(getPlace, [])
 
 
@@ -32,6 +36,7 @@ export default function OnePlaceInfo() {
         <div className={s.placeContainer}>
             
                 <div className={s.slider}>
+                    <img src={place.photo} alt={place.title}/>
                     {/* <ImageSlider /> */}
                 </div>
                 <div className={s.receiptWrapper}>
@@ -45,15 +50,15 @@ export default function OnePlaceInfo() {
                         <table>
                             <tr>
                                 <td>Цена и количество дней</td>
-                                <td>Сумма</td>
+                                <td>{place.price}</td>
                             </tr>
                             <tr>
                                 <td>Комиссия за услуги</td>
-                                <td>Сумма</td>
+                                <td>{place.price}</td>
                             </tr>
                             <tr className={s.total}>
                                 <td><b>Всего</b></td>
-                                <td><b>Сумма</b></td>
+                                <td><b>{place.price}</b></td>
                             </tr>
 
                         </table>

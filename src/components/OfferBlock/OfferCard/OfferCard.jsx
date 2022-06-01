@@ -63,7 +63,7 @@ export default function OfferCard(){
                     <div className={s.innerOfferContainer}>
                         <div className={s.offerCardFront}>
                             <div className={s.cardImage}>
-                                <img src="https://images.unsplash.com/photo-1554078140-01f553ad4d40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt={place.title}/>
+                                <img src={place.photo} alt={place.title}/>
                             </div>
                             <div className={s.cardInfo}>
                                 <h3>{place.title}</h3>
